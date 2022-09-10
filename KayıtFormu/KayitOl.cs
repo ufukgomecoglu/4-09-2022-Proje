@@ -33,25 +33,32 @@ namespace KayıtFormu
             string eposta = textBoxEposta.Text;
             string sifre = textBoxSifre.Text;
             string sifretekrar = textBoxSifreTekrar.Text;
+            if (NullControl(textBoxKullaniciAdi.Text)== null)
+            {
+                key = false;
+                MessageBox.Show("Kullanıcı Adı Boş Bırakılamaz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             foreach (string item in ProgramKullanicilariDosyalariListele())
             {
                 string dosyaAdi = ad.ToUpper() + ".txt";
-                if (dosyaAdi!=item)
+                if (dosyaAdi==item)
                 {
-                    key = true;
-                }
-                else
-                {
-                    key=false;
+                    key = false;
                     MessageBox.Show("Kullanıcı Adı Mevcut", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     textBoxKullaniciAdi.Text = "";
                 }
             }
-            if (sifre == sifretekrar)
+            if (NullControl(textBoxKullaniciAdi.Text) == null)
             {
-                key = true;
+                key = false;
+                MessageBox.Show("Eposta Boş Bırakılamaz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
+            if (NullControl(textBoxKullaniciAdi.Text) == null)
+            {
+                key = false;
+                MessageBox.Show("Şifre Boş Bırakılamaz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            if (sifre != sifretekrar)
             {
                 key = false;
                 MessageBox.Show("Şifre ve Şifre Tekrar aynı olmalıdır", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -87,6 +94,17 @@ namespace KayıtFormu
                 kullaniciAdi.Add($"{file.Name}");
             }
             return kullaniciAdi;
+        }
+        public string NullControl(string text)
+        {
+            if (!String.IsNullOrEmpty(text))
+            {
+                return text;
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }
