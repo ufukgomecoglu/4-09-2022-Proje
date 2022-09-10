@@ -11,3 +11,4 @@ C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\Ka
 C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\KayıtFormu.pdb
 C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\KayıtFormu.KayitOl.resources
 C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\KayıtFormu.KayitForm.resources
+C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\KayıtFormu.SifremiUnuttum.resources

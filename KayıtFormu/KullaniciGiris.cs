@@ -59,7 +59,8 @@ namespace KayıtFormu
 
         private void buttonSifremiUnuttum_Click(object sender, EventArgs e)
         {
-
+            SifremiUnuttum sifremiUnuttum = new SifremiUnuttum();
+            sifremiUnuttum.ShowDialog();
         }
 
         private void KullaniciGiris_FormClosed(object sender, FormClosedEventArgs e)
