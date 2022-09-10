@@ -46,8 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper.cs" />
+    <Compile Include="KayitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitForm.Designer.cs">
+      <DependentUpon>KayitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitOl.Designer.cs">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGiris.Designer.cs">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="KayitForm.resx">
+      <DependentUpon>KayitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitOl.resx">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGiris.resx">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

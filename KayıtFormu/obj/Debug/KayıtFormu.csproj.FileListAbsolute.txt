@@ -1,0 +1,13 @@
+C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\bin\Debug\KayıtFormu.exe.config
+C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\bin\Debug\KayıtFormu.exe
+C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\bin\Debug\KayıtFormu.pdb
+C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\KayıtFormu.csproj.AssemblyReference.cache
+C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\KayıtFormu.csproj.SuggestedBindingRedirects.cache
+C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\KayıtFormu.KullaniciGiris.resources
+C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\KayıtFormu.Properties.Resources.resources
+C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\KayıtFormu.csproj.GenerateResource.cache
+C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\KayıtFormu.csproj.CoreCompileInputs.cache
+C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\KayıtFormu.exe
+C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\KayıtFormu.pdb
+C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\KayıtFormu.KayitOl.resources
+C:\Users\asus\OneDrive\Documents\GitHub\4-09-2022-Proje\KayıtFormu\obj\Debug\KayıtFormu.KayitForm.resources
