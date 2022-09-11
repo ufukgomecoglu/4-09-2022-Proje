@@ -1,6 +1,6 @@
 ﻿namespace KayıtFormu
 {
-    partial class KayitOl
+    partial class Profilim
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonKaydet = new System.Windows.Forms.Button();
-            this.textBoxSifre = new System.Windows.Forms.TextBox();
-            this.textBoxSifreTekrar = new System.Windows.Forms.TextBox();
+            this.buttonGuncelle = new System.Windows.Forms.Button();
             this.textBoxEposta = new System.Windows.Forms.TextBox();
             this.textBoxKullaniciAdi = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -43,47 +39,27 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.buttonKaydet);
-            this.groupBox1.Controls.Add(this.textBoxSifre);
-            this.groupBox1.Controls.Add(this.textBoxSifreTekrar);
+            this.groupBox1.Controls.Add(this.buttonGuncelle);
             this.groupBox1.Controls.Add(this.textBoxEposta);
             this.groupBox1.Controls.Add(this.textBoxKullaniciAdi);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(203, 161);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.Size = new System.Drawing.Size(203, 109);
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Kayıt Ol Panel";
+            this.groupBox1.Text = "Profilim";
             // 
-            // buttonKaydet
+            // buttonGuncelle
             // 
-            this.buttonKaydet.Location = new System.Drawing.Point(8, 126);
-            this.buttonKaydet.Name = "buttonKaydet";
-            this.buttonKaydet.Size = new System.Drawing.Size(181, 23);
-            this.buttonKaydet.TabIndex = 2;
-            this.buttonKaydet.Text = "Kaydet";
-            this.buttonKaydet.UseVisualStyleBackColor = true;
-            this.buttonKaydet.Click += new System.EventHandler(this.buttonKaydet_Click);
-            // 
-            // textBoxSifre
-            // 
-            this.textBoxSifre.Location = new System.Drawing.Point(88, 71);
-            this.textBoxSifre.Name = "textBoxSifre";
-            this.textBoxSifre.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSifre.TabIndex = 1;
-            this.textBoxSifre.UseSystemPasswordChar = true;
-            // 
-            // textBoxSifreTekrar
-            // 
-            this.textBoxSifreTekrar.Location = new System.Drawing.Point(89, 100);
-            this.textBoxSifreTekrar.Name = "textBoxSifreTekrar";
-            this.textBoxSifreTekrar.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSifreTekrar.TabIndex = 1;
-            this.textBoxSifreTekrar.UseSystemPasswordChar = true;
+            this.buttonGuncelle.Location = new System.Drawing.Point(8, 68);
+            this.buttonGuncelle.Name = "buttonGuncelle";
+            this.buttonGuncelle.Size = new System.Drawing.Size(181, 23);
+            this.buttonGuncelle.TabIndex = 2;
+            this.buttonGuncelle.Text = "Güncelle";
+            this.buttonGuncelle.UseVisualStyleBackColor = true;
+            this.buttonGuncelle.Click += new System.EventHandler(this.buttonGuncelle_Click);
             // 
             // textBoxEposta
             // 
@@ -98,24 +74,6 @@
             this.textBoxKullaniciAdi.Name = "textBoxKullaniciAdi";
             this.textBoxKullaniciAdi.Size = new System.Drawing.Size(100, 20);
             this.textBoxKullaniciAdi.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 103);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Şifre Tekrar";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(54, 74);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Şifre";
             // 
             // label2
             // 
@@ -135,16 +93,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Kullanıcı Adı";
             // 
-            // KayitOl
+            // Profilim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(225, 182);
+            this.ClientSize = new System.Drawing.Size(229, 143);
             this.Controls.Add(this.groupBox1);
-            this.Name = "KayitOl";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "KayitOl";
-            this.Load += new System.EventHandler(this.KayitOl_Load);
+            this.Name = "Profilim";
+            this.Text = "Profilim";
+            this.Load += new System.EventHandler(this.Profilim_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -154,13 +111,9 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button buttonKaydet;
-        private System.Windows.Forms.TextBox textBoxSifre;
-        private System.Windows.Forms.TextBox textBoxSifreTekrar;
+        private System.Windows.Forms.Button buttonGuncelle;
         private System.Windows.Forms.TextBox textBoxEposta;
         private System.Windows.Forms.TextBox textBoxKullaniciAdi;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }

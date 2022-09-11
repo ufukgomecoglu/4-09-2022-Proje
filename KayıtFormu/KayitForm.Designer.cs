@@ -36,13 +36,17 @@
             this.TSMI_PersonelSil = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.TSMI_Kapat = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMI_Ayarlar = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMI_Profilim = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMI_SifremiDegistir = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMI_Islemler});
+            this.TSMI_Islemler,
+            this.TSMI_Ayarlar});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -97,12 +101,35 @@
             this.TSMI_Kapat.Size = new System.Drawing.Size(220, 22);
             this.TSMI_Kapat.Text = "Kapat";
             // 
+            // TSMI_Ayarlar
+            // 
+            this.TSMI_Ayarlar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMI_Profilim,
+            this.TSMI_SifremiDegistir});
+            this.TSMI_Ayarlar.Name = "TSMI_Ayarlar";
+            this.TSMI_Ayarlar.Size = new System.Drawing.Size(56, 20);
+            this.TSMI_Ayarlar.Text = "Ayarlar";
+            // 
+            // TSMI_Profilim
+            // 
+            this.TSMI_Profilim.Name = "TSMI_Profilim";
+            this.TSMI_Profilim.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_Profilim.Text = "Profilim";
+            this.TSMI_Profilim.Click += new System.EventHandler(this.TSMI_Profilim_Click);
+            // 
+            // TSMI_SifremiDegistir
+            // 
+            this.TSMI_SifremiDegistir.Name = "TSMI_SifremiDegistir";
+            this.TSMI_SifremiDegistir.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_SifremiDegistir.Text = "Şifremi Değiştir";
+            // 
             // KayitForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "KayitForm";
             this.Text = "KayıtForm";
@@ -124,5 +151,8 @@
         private System.Windows.Forms.ToolStripMenuItem TSMI_PersonelSil;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem TSMI_Kapat;
+        private System.Windows.Forms.ToolStripMenuItem TSMI_Ayarlar;
+        private System.Windows.Forms.ToolStripMenuItem TSMI_Profilim;
+        private System.Windows.Forms.ToolStripMenuItem TSMI_SifremiDegistir;
     }
 }

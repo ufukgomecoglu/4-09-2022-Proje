@@ -28,5 +28,25 @@ namespace KayıtFormu
                 directoryInfo.Create(); //Klasör oluşturur.
             }
         }
+
+        private void TSMI_Profilim_Click(object sender, EventArgs e)
+        {
+            Form[] AcikFormlar = this.MdiChildren;
+            bool acikmi = false;
+            foreach (Form item in AcikFormlar)
+            {
+                if (item.GetType() == typeof(Profilim))
+                {
+                    acikmi = true;
+                    item.Activate();
+                }
+            }
+            if (acikmi == false)
+            {
+                Profilim frm = new Profilim();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
     }
 }

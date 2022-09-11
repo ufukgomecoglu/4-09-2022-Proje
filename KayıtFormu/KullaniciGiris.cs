@@ -27,11 +27,12 @@ namespace KayıtFormu
 
         private void buttonGirisYap_Click(object sender, EventArgs e)
         {
+            
             bool key = true;
-            string kullaniciAdi = textBoxKullaniciAdi.Text;
+            ProgramKullanici.KullaniciAdi = textBoxKullaniciAdi.Text;
             foreach (string item in ProgramKullanicilariDosyalariListele())
             {
-                string kAB= kullaniciAdi.ToUpper()+".txt";
+                string kAB= ProgramKullanici.KullaniciAdi.ToUpper()+".txt";
                 if (kAB!=item)
                 {
                     key = false;
@@ -41,11 +42,11 @@ namespace KayıtFormu
             }
             if (key==true)
             {
-                StreamReader streamReader = new StreamReader(@"C:\KayitForm\ProgramKullanıcıları/" + kullaniciAdi.ToUpper() + ".txt");//Dosya okuma
-                string kullaniciAdi1 = streamReader.ReadLine();
+                StreamReader streamReader = new StreamReader(@"C:\KayitForm\ProgramKullanıcıları/" + ProgramKullanici.KullaniciAdi.ToUpper() + ".txt");//Dosya okuma
+                string kullaniciAdi = streamReader.ReadLine();
                 string eposta = streamReader.ReadLine();
                 string sifre = streamReader.ReadLine();
-                if (kullaniciAdi1 == $"Kullanıcı Adı={textBoxKullaniciAdi.Text}" && sifre ==$"Şifre={textBoxSifre.Text}")
+                if (kullaniciAdi == $"Kullanıcı Adı={textBoxKullaniciAdi.Text}" && sifre ==$"Şifre={textBoxSifre.Text}")
                 {
                     GırısYap = true;
                     this.Close();
